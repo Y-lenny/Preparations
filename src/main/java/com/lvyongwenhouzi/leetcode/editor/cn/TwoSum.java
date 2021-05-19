@@ -1,6 +1,6 @@
 //给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 的那 两个 整数，并返回它们的数组下标。
 //
-// 你可以假设每种输入只会对应一个答案。但是，数组中同一个元素不能使用两遍。
+// 你可以假设每种输入只会对应一个答案。但是，数组中同一个元素在答案里不能重复出现。
 //
 // 你可以按任意顺序返回答案。
 //
@@ -39,22 +39,39 @@
 // 只会存在一个有效答案
 //
 // Related Topics 数组 哈希表
-// 👍 10420 👎 0
+// 👍 11073 👎 0
 
 
-package com.lvyongwenhouzi.leetcode.leetcode.editor.cn;
+package com.lvyongwenhouzi.leetcode.editor.cn;
 
 public class TwoSum {
     public static void main(String[] args) {
         Solution solution = new TwoSum().new Solution();
+        int[] ints = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int target = 10;
+        int[] twoIndex = solution.twoSum(ints, target);
+        if (twoIndex.length == 2) {
+            System.out.println("first index:" + twoIndex[0] + "second index:" + twoIndex[1]);
+        }
+
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int[] twoSum(int[] nums, int target) {
-            return null;
-        }
-    }
-//leetcode submit region end(Prohibit modification and deletion)
 
+            int[] twoIndex = new int[2];
+            for (int i = 0; i < nums.length; i++) {
+                for (int j = i + 1; j < nums.length; j++) {
+                    if (nums[i] + nums[j] == target) {
+                        twoIndex[0] = i;
+                        twoIndex[1] = j;
+                        return twoIndex;
+                    }
+                }
+            }
+            return twoIndex;
+        }
+//leetcode submit region end(Prohibit modification and deletion)
+    }
 }
