@@ -48,7 +48,7 @@
 // 👍 2462 👎 0
 
 
-package com.lvyongwenhouzi.leetcode.leetcode.editor.cn;
+package com.lvyongwenhouzi.leetcode.editor.cn;
 
 public class ContainerWithMostWater {
     public static void main(String[] args) {
