@@ -38,6 +38,9 @@
 
 package com.lvyongwenhouzi.leetcode.editor.cn;
 
+import java.util.Deque;
+import java.util.LinkedList;
+
 public class BasicCalculator {
     public static void main(String[] args) {
         Solution solution = new BasicCalculator().new Solution();
@@ -46,7 +49,40 @@ public class BasicCalculator {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int calculate(String s) {
-            return 1;
+
+            Deque<Integer> deque = new LinkedList();
+
+            int ops = 1;
+            deque.push(ops);
+            int i = 0;
+            int sum = 0;
+
+            while (i < s.length()) {
+                if (s.charAt(i) == ' ') {
+                    i++;
+                } else if (s.charAt(i) == '+') {
+                    ops = deque.peek();
+                    i++;
+                } else if (s.charAt(i) == '-') {
+                    ops = -deque.peek();
+                    i++;
+                } else if (s.charAt(i) == '(') {
+                    deque.push(ops);
+                    i++;
+                } else if (s.charAt(i) == ')') {
+                    deque.pop();
+                    i++;
+                } else {
+                    // 数字
+                    int num = 0;
+                    while (i < s.length() && Character.isDigit(s.charAt(i))) {
+                        num = num * 10 + Character.getNumericValue(s.charAt(i));
+                        i++;
+                    }
+                    sum += ops * num;
+                }
+            }
+            return sum;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
