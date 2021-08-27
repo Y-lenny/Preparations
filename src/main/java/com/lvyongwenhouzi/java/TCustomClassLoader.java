@@ -30,11 +30,11 @@ import java.lang.reflect.InvocationTargetException;
  * @date 2021-08-23 12:29
  * @since 1.0
  */
-public class CustomClassLoader extends ClassLoader {
+public class TCustomClassLoader extends ClassLoader {
 
     public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchMethodException, InvocationTargetException {
-        CustomClassLoader customClassLoader = new CustomClassLoader();
-        Class<?> loadClass = customClassLoader.loadClass("HelloWorld");
+        TCustomClassLoader tCustomClassLoader = new TCustomClassLoader();
+        Class<?> loadClass = tCustomClassLoader.loadClass("HelloWorld");
         loadClass.getMethod("hello").invoke(null, null);
     }
 

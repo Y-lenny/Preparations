@@ -3,7 +3,7 @@ package com.lvyongwenhouzi.java;
 import lombok.SneakyThrows;
 
 /**
- * <b>Thread 线程有哪些状态以及在生命周期中是如何流转的 ？</b>
+ * <b>TThread 线程有哪些状态以及在生命周期中是如何流转的 ？</b>
  * <p>
  * 创建(NEW)， 新建 {@link java.lang.Thread}
  * 运行(RUNNABLE，运行中(RUNNING) ——调用{@link java.lang.Thread#yield()}——>就绪(READY))，调用{@link java.lang.Thread#start()}等
@@ -16,7 +16,7 @@ import lombok.SneakyThrows;
  * @date 2021-08-26 11:36
  * @since 1.0
  */
-public class Thread {
+public class TThread {
 
     public static void main(String[] args) throws InterruptedException {
 

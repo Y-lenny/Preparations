@@ -9,7 +9,7 @@ import java.util.List;
  * 普通for循环无法处理数组元素size变化导致循环得到的元素位置错误，所以iterator维护了游标和元素size变化
  * 游标也会动态变化的能力使得循环得到的元素位置正确、值正确。
  */
-public class Collection {
+public class TCollection {
 
 
     public static void main(String[] args) {

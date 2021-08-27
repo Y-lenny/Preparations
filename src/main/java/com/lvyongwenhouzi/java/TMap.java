@@ -12,7 +12,7 @@ import java.util.HashMap;
  * @date 2021-08-24 17:39
  * @since 1.0
  */
-public class Map {
+public class TMap {
 
     public static void main(String[] args) throws InterruptedException {
         int cap = 100;

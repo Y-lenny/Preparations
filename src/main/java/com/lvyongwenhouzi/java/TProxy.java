@@ -12,10 +12,10 @@ import java.lang.reflect.Method;
  * 5. 调用代理对象方法
  *
  * ------- 原理 ---------
- * 通过InvocationHandler这个切入点（自定上下文内容）把代理类关联到目标对象（Proxy -> Handler -> Obj）;
+ * 通过InvocationHandler这个切入点（自定上下文内容）把代理类关联到目标对象（TProxy -> Handler -> Obj）;
  *
  */
-public class Proxy {
+public class TProxy {
 
     public static void main(String[] args) {
 
