@@ -9,8 +9,10 @@ import lombok.Data;
  * [}    -- 不匹配
  * 1、定义匹配规则（如上）
  * 2、判断是入栈还是出栈，出栈的时候判断元素是否匹配
+ *
  * 技巧：
  * 类似这种匹配对称关系、先进后出、先出后进的这种场景都应该考虑栈实现
+ *
  * leecode：{@link ValidParentheses}
  */
 public class DetectBrackets {

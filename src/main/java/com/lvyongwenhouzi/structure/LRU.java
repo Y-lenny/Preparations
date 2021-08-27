@@ -3,6 +3,8 @@ package com.lvyongwenhouzi.structure;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
+import java.util.LinkedHashMap;
+
 /**
  * 如何实现LRU缓存淘汰算法?
  * 1、判断是否存在链表当中 ？
@@ -15,6 +17,8 @@ import lombok.Data;
  * 技巧：
  * 1、定一个头节点
  * 2、使用node-next.data进行节点是否存在判断（因为单链表无法回朔）
+ *
+ * Java 集合实现：{@link LinkedHashMap}
  */
 public class LRU {
 

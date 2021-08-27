@@ -14,9 +14,18 @@ import java.util.HashMap;
  */
 public class Map {
 
-    public static void main(String[] args) {
-        HashMap hashMap = new HashMap();
-        hashMap.put("hash","hash");
+    public static void main(String[] args) throws InterruptedException {
+        int cap = 100;
+        int n = cap - 1;
+        // 让最高位的1后面全部补1（确保是奇数），最后+1再变成偶数
+        n |= n >>> 1;
+        n |= n >>> 2;
+        n |= n >>> 4;
+        n |= n >>> 8;
+        n |= n >>> 16;
+
+        java.lang.Thread.sleep(100000000);
+        System.out.println(n + 1); // 128
     }
 
 }
