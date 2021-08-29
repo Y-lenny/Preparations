@@ -1,0 +1,154 @@
+参考链接：https://www.jianshu.com/p/6a8997560b05
+
+lvyongwen@lvyongwendeMacBook-Pro Preparations % javap -help
+用法: javap <options> <classes>
+其中, 可能的选项包括:
+  -help  --help  -?        输出此用法消息
+  -version                 版本信息
+  -v  -verbose             输出附加信息
+  -l                       输出行号和本地变量表
+  -public                  仅显示公共类和成员
+  -protected               显示受保护的/公共类和成员
+  -package                 显示程序包/受保护的/公共类
+                           和成员 (默认)
+  -p  -private             显示所有类和成员
+  -c                       对代码进行反汇编
+  -s                       输出内部类型签名
+  -sysinfo                 显示正在处理的类的
+                           系统信息 (路径, 大小, 日期, MD5 散列)
+  -constants               显示最终常量
+  -classpath <path>        指定查找用户类文件的位置
+  -cp <path>               指定查找用户类文件的位置
+  -bootclasspath <path>    覆盖引导类文件的位置
+
+lvyongwen@lvyongwendeMacBook-Pro Preparations % javap -v  target/classes/com/lvyongwenhouzi/java/Proxy.class
+Classfile /Users/lvyongwen/IdeaProjects/Preparations/target/classes/com/lvyongwenhouzi/java/Proxy.class
+  Last modified 2021-8-11; size 1139 bytes
+  MD5 checksum cd8c2e6ee4af4e25b047ebbf64c327b8            /* 魔数 */
+  Compiled from "Proxy.java"
+public class com.lvyongwenhouzi.java.Proxy
+  minor version: 0                                        /* 版本 */
+  major version: 51
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:                                            /* 常量池 */
+   #1 = Methodref          #13.#34        // java/lang/Object."<init>":()V
+   #2 = Class              #35            // com/lvyongwenhouzi/java/Proxy$ObjImpl
+   #3 = Methodref          #2.#34         // com/lvyongwenhouzi/java/Proxy$ObjImpl."<init>":()V
+   #4 = Methodref          #13.#36        // java/lang/Object.getClass:()Ljava/lang/Class;
+   #5 = Methodref          #37.#38        // java/lang/Class.getClassLoader:()Ljava/lang/ClassLoader;
+   #6 = Methodref          #37.#39        // java/lang/Class.getInterfaces:()[Ljava/lang/Class;
+   #7 = Class              #40            // com/lvyongwenhouzi/java/Proxy$InvokeObj
+   #8 = Methodref          #7.#41         // com/lvyongwenhouzi/java/Proxy$InvokeObj."<init>":(Ljava/lang/Object;)V
+   #9 = Methodref          #42.#43        // java/lang/reflect/Proxy.newProxyInstance:(Ljava/lang/ClassLoader;[Ljava/lang/Class;Ljava/lang/reflect/InvocationHandler;)Ljava/lang/Object;
+  #10 = Class              #44            // com/lvyongwenhouzi/java/Proxy$Obj
+  #11 = InterfaceMethodref #10.#45        // com/lvyongwenhouzi/java/Proxy$Obj.print:()V
+  #12 = Class              #46            // com/lvyongwenhouzi/java/Proxy
+  #13 = Class              #47            // java/lang/Object
+  #14 = Utf8               ObjImpl
+  #15 = Utf8               InnerClasses
+  #16 = Utf8               Obj
+  #17 = Utf8               InvokeObj
+  #18 = Utf8               <init>
+  #19 = Utf8               ()V
+  #20 = Utf8               Code
+  #21 = Utf8               LineNumberTable
+  #22 = Utf8               LocalVariableTable
+  #23 = Utf8               this
+  #24 = Utf8               Lcom/lvyongwenhouzi/java/Proxy;
+  #25 = Utf8               main
+  #26 = Utf8               ([Ljava/lang/String;)V
+  #27 = Utf8               args
+  #28 = Utf8               [Ljava/lang/String;
+  #29 = Utf8               obj
+  #30 = Utf8               Lcom/lvyongwenhouzi/java/Proxy$Obj;
+  #31 = Utf8               proxyInstance
+  #32 = Utf8               SourceFile
+  #33 = Utf8               Proxy.java
+  #34 = NameAndType        #18:#19        // "<init>":()V
+  #35 = Utf8               com/lvyongwenhouzi/java/Proxy$ObjImpl
+  #36 = NameAndType        #48:#49        // getClass:()Ljava/lang/Class;
+  #37 = Class              #50            // java/lang/Class
+  #38 = NameAndType        #51:#52        // getClassLoader:()Ljava/lang/ClassLoader;
+  #39 = NameAndType        #53:#54        // getInterfaces:()[Ljava/lang/Class;
+  #40 = Utf8               com/lvyongwenhouzi/java/Proxy$InvokeObj
+  #41 = NameAndType        #18:#55        // "<init>":(Ljava/lang/Object;)V
+  #42 = Class              #56            // java/lang/reflect/Proxy
+  #43 = NameAndType        #57:#58        // newProxyInstance:(Ljava/lang/ClassLoader;[Ljava/lang/Class;Ljava/lang/reflect/InvocationHandler;)Ljava/lang/Object;
+  #44 = Utf8               com/lvyongwenhouzi/java/Proxy$Obj
+  #45 = NameAndType        #59:#19        // print:()V
+  #46 = Utf8               com/lvyongwenhouzi/java/Proxy
+  #47 = Utf8               java/lang/Object
+  #48 = Utf8               getClass
+  #49 = Utf8               ()Ljava/lang/Class;
+  #50 = Utf8               java/lang/Class
+  #51 = Utf8               getClassLoader
+  #52 = Utf8               ()Ljava/lang/ClassLoader;
+  #53 = Utf8               getInterfaces
+  #54 = Utf8               ()[Ljava/lang/Class;
+  #55 = Utf8               (Ljava/lang/Object;)V
+  #56 = Utf8               java/lang/reflect/Proxy
+  #57 = Utf8               newProxyInstance
+  #58 = Utf8               (Ljava/lang/ClassLoader;[Ljava/lang/Class;Ljava/lang/reflect/InvocationHandler;)Ljava/lang/Object;
+  #59 = Utf8               print
+{
+ /*默认的构造方法，在构造方法执行时主要完成一些初始化操作，包括一些成员变量的初始化赋值等操作*/
+  public com.lvyongwenhouzi.java.Proxy();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      /*指令与代码行数的偏移对应关系，每一行第一个数字对应代码行数，第二个数字对应前面code中指令前面的数字*/
+      LineNumberTable:
+        line 18: 0
+        /*局部变量表，start+length表示这个变量在字节码中的生命周期起始和结束的偏移位置（this生命周期从头0到结尾10），slot就是这个变量在局部变量表中的槽位（槽位可复用），name就是变量名称，Signatur局部变量类型描述*/
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcom/lvyongwenhouzi/java/Proxy;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=5, locals=3, args_size=1
+         0: new           #2                  // class com/lvyongwenhouzi/java/Proxy$ObjImpl
+         3: dup
+         4: invokespecial #3                  // Method com/lvyongwenhouzi/java/Proxy$ObjImpl."<init>":()V
+         7: astore_1
+         8: aload_1
+         9: invokevirtual #4                  // Method java/lang/Object.getClass:()Ljava/lang/Class;
+        12: invokevirtual #5                  // Method java/lang/Class.getClassLoader:()Ljava/lang/ClassLoader;
+        15: aload_1
+        16: invokevirtual #4                  // Method java/lang/Object.getClass:()Ljava/lang/Class;
+        19: invokevirtual #6                  // Method java/lang/Class.getInterfaces:()[Ljava/lang/Class;
+        22: new           #7                  // class com/lvyongwenhouzi/java/Proxy$InvokeObj
+        25: dup
+        26: aload_1
+        27: invokespecial #8                  // Method com/lvyongwenhouzi/java/Proxy$InvokeObj."<init>":(Ljava/lang/Object;)V
+        30: invokestatic  #9                  // Method java/lang/reflect/Proxy.newProxyInstance:(Ljava/lang/ClassLoader;[Ljava/lang/Class;Ljava/lang/reflect/InvocationHandler;)Ljava/lang/Object;
+        33: checkcast     #10                 // class com/lvyongwenhouzi/java/Proxy$Obj
+        36: astore_2
+        37: aload_2
+        38: invokeinterface #11,  1           // InterfaceMethod com/lvyongwenhouzi/java/Proxy$Obj.print:()V
+        43: return
+      LineNumberTable:
+        line 22: 0
+        line 23: 8
+        line 24: 9
+        line 25: 16
+        line 23: 30
+        line 28: 37
+        line 29: 43
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      44     0  args   [Ljava/lang/String;
+            8      36     1   obj   Lcom/lvyongwenhouzi/java/Proxy$Obj;
+           37       7     2 proxyInstance   Lcom/lvyongwenhouzi/java/Proxy$Obj;
+}
+SourceFile: "Proxy.java"
+InnerClasses:
+     public static #14= #2 of #12; //ObjImpl=class com/lvyongwenhouzi/java/Proxy$ObjImpl of class com/lvyongwenhouzi/java/Proxy
+     public static #16= #10 of #12; //Obj=class com/lvyongwenhouzi/java/Proxy$Obj of class com/lvyongwenhouzi/java/Proxy
+     public static #17= #7 of #12; //InvokeObj=class com/lvyongwenhouzi/java/Proxy$InvokeObj of class com/lvyongwenhouzi/java/Proxy
