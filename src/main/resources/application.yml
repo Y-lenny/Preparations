@@ -1,0 +1,12 @@
+server:
+  port: 8080 # 默认端口
+  servlet:
+    context-path: /preparations # 上下文路径，server.context-path过期
+spring:
+  web:
+    resources:
+      static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/ # 默认静态资源路径
+  profiles:
+    active: dev # 指定开发环境
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml # 默认mapper扫描位置
