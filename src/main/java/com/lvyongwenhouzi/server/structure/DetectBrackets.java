@@ -1,6 +1,6 @@
-package com.lvyongwenhouzi.structure;
+package com.lvyongwenhouzi.server.structure;
 
-import com.lvyongwenhouzi.leetcode.editor.cn.ValidParentheses;
+import com.lvyongwenhouzi.server.leetcode.editor.cn.ValidParentheses;
 import lombok.Data;
 
 /**

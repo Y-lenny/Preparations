@@ -1,4 +1,4 @@
-package com.lvyongwenhouzi.structure;
+package com.lvyongwenhouzi.server.structure;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

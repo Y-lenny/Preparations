@@ -55,7 +55,7 @@
 // 👍 2550 👎 0
 
 
-package com.lvyongwenhouzi.leetcode.editor.cn;
+package com.lvyongwenhouzi.server.leetcode.editor.cn;
 
 import java.util.Deque;
 import java.util.HashMap;

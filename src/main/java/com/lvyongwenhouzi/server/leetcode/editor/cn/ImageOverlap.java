@@ -55,7 +55,7 @@
 // 👍 66 👎 0
 
 
-package com.lvyongwenhouzi.leetcode.editor.cn;
+package com.lvyongwenhouzi.server.leetcode.editor.cn;
 public class ImageOverlap{
   public static void main(String[] args) {
        Solution solution = new ImageOverlap().new Solution();

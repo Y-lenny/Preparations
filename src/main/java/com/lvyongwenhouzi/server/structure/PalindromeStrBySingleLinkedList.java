@@ -1,4 +1,4 @@
-package com.lvyongwenhouzi.structure;
+package com.lvyongwenhouzi.server.structure;
 
 /**
  * 字符串用单链表存储，如何来判断是一个回文串？时间空间复杂度是多少？

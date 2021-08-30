@@ -1,4 +1,4 @@
-package com.lvyongwenhouzi.java;
+package com.lvyongwenhouzi.server.java;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

@@ -42,7 +42,7 @@
 // 👍 1886 👎 0
 
 
-package com.lvyongwenhouzi.leetcode.editor.cn;
+package com.lvyongwenhouzi.server.leetcode.editor.cn;
 
 public class ReverseLinkedList {
     public static void main(String[] args) {

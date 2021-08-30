@@ -1,9 +1,12 @@
-package com.lvyongwenhouzi.structure;
+package com.lvyongwenhouzi.server.structure;
 
 import lombok.SneakyThrows;
 
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * <b>剖析高性能队列Disruptor背后的数据结构和算法</b>
@@ -14,15 +17,20 @@ import java.util.concurrent.Executors;
  */
 public class Disruptor {
 
-    private static final Executor executor = Executors.newFixedThreadPool(2);
+    private static final Executor EXECUTOR = Executors.newFixedThreadPool(2);
+
+    // 锁 synchronize
+    private static final Lock LOCK = new ReentrantLock(true);
+    // 条件 Object.wait/notify
+    private static final Condition CONDITION = LOCK.newCondition();
 
     public static void main(String[] args) {
 
         CycleQueue cycleQueue = new CycleQueue();
-        final CycleProducer cycleProducer = new CycleProducer(cycleQueue);
-        final CycleConsumer cycleConsumer = new CycleConsumer(cycleQueue);
+        final LockCycleProducer cycleProducer = new LockCycleProducer(cycleQueue);
+        final LockCycleConsumer cycleConsumer = new LockCycleConsumer(cycleQueue);
 
-        executor.execute(new Runnable() {
+        EXECUTOR.execute(new Runnable() {
             @SneakyThrows
             @Override
             public void run() {
@@ -30,7 +38,7 @@ public class Disruptor {
                 cycleProducer.product(data++);
             }
         });
-        executor.execute(new Runnable() {
+        EXECUTOR.execute(new Runnable() {
             @SneakyThrows
             @Override
             public void run() {
@@ -41,10 +49,7 @@ public class Disruptor {
 
 
     /**
-     * 基于循环队列的“生产者 - 消费者模型”
-     */
-    /**
-     * 基于加锁的并发“生产者 - 消费者模型”
+     * 基于循环队列+加锁(synchronized)的并发“生产者 - 消费者模型”
      */
     static class CycleQueue {
 
@@ -143,11 +148,66 @@ public class Disruptor {
         }
     }
 
+    /**
+     * 基于循环队列+加锁(lock+condition)的并发“生产者 - 消费者模型”
+     */
+    static class LockCycleProducer {
+
+        private CycleQueue cycleQueue;
+
+        public LockCycleProducer(CycleQueue cycleQueue) {
+            this.cycleQueue = cycleQueue;
+        }
+
+        public void product(int data) throws InterruptedException {
+
+            LOCK.lock();
+            try {
+                while (true) {
+                    if (cycleQueue.isFull()) {
+                        CONDITION.await();
+                    }
+                    if (cycleQueue.offer(data)) {
+                        System.out.println("生产成功...");
+                        CONDITION.signal();
+                    }
+                }
+            } finally {
+                LOCK.unlock();
+            }
+        }
+    }
+
+    static class LockCycleConsumer {
+
+        private CycleQueue cycleQueue;
+
+        public LockCycleConsumer(CycleQueue cycleQueue) {
+            this.cycleQueue = cycleQueue;
+        }
+
+        public void consume() throws InterruptedException {
+
+            LOCK.lock();
+            try {
+                while (true) {
+                    if (cycleQueue.isEmpty()) {
+                        CONDITION.await();
+                    }
+                    if (cycleQueue.poll() != null) {
+                        System.out.println("消费成功...");
+                        CONDITION.signal();
+                    }
+                }
+            } finally {
+                LOCK.unlock();
+            }
+        }
+    }
 
     /**
      * 基于无锁的并发“生产者 - 消费者模型”
      */
-
 
 
 }

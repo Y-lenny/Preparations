@@ -1,4 +1,4 @@
-package com.lvyongwenhouzi.java;
+package com.lvyongwenhouzi.server.java;
 
 import lombok.SneakyThrows;
 

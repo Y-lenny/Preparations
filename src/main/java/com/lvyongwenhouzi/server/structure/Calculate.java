@@ -1,6 +1,5 @@
-package com.lvyongwenhouzi.structure;
+package com.lvyongwenhouzi.server.structure;
 
-import com.sun.tools.javac.util.Assert;
 
 import java.util.Stack;
 

@@ -1,4 +1,4 @@
-package com.lvyongwenhouzi.structure;
+package com.lvyongwenhouzi.server.structure;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -14,7 +14,7 @@ import lombok.Data;
  * 技巧：
  * 插入反转链表
  *
- * leetcode：{@link com.lvyongwenhouzi.leetcode.editor.cn.ReverseLinkedList}
+ * leetcode：{@link com.lvyongwenhouzi.server.leetcode.editor.cn.ReverseLinkedList}
  */
 public class ReverseLinkedList {
 
