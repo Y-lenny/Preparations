@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
  * 通过{@link com.lvyongwenhouzi.server.java.TProxy}已经了解到动态代理的实现方式是可以做到方法调用的前、后、异常等等进行处理钩子；
  * 而Spring的AOP正好和动态代理的机制相似，所以可以肯定的推测AOP使用的动态代理技术。
  *
- * 具体看下Spring是如何基于注解形式把前置、后置、环绕等等应用起来：
+ * 具体看下Spring是如何基于注解形式把定义好的前置、后置、环绕等等织入到应用中：
  *
  *
  *
