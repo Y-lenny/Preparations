@@ -1,4 +1,4 @@
-package com.lvyongwenhouzi.server.java;
+package com.lvyongwenhouzi.server.java.collection;
 
 /**
  * <b>Map的关键技术点 ？</b>
