@@ -11,7 +11,7 @@ import java.util.concurrent.Executors;
 /**
  * IO异常会导致线程资源无法释放 ?
  */
-public class TIO {
+public class TIOException {
 
     public static Executor executor = Executors.newSingleThreadExecutor();
 
@@ -27,7 +27,7 @@ public class TIO {
 
     private static void extracted() throws IOException {
 
-        FileReader fis = new FileReader(TIO.class.getClassLoader().getResource("IO.txt").getFile());
+        FileReader fis = new FileReader(TIOException.class.getClassLoader().getResource("IO.txt").getFile());
         BufferedReader br = new BufferedReader(fis);
         String line;
         while ((line = br.readLine()) != null) {
