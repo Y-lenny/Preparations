@@ -102,7 +102,6 @@
         <entry key="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/leetcode/editor/cn/TwoSum.java">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/leetcode/editor/cn/doc/content/TwoSum.md" />
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/leetcode/editor/cn/TwoSum.java" />
               <option name="questionId" value="1" />
             </LeetcodeEditor>
@@ -164,10 +163,33 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/BinarySearch.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/BinarySearch.java" />
+              <option name="questionId" value="792" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/ContainerWithMostWater.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/ContainerWithMostWater.java" />
+              <option name="questionId" value="11" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/RandomPickWithBlacklist.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/RandomPickWithBlacklist.java" />
+              <option name="questionId" value="894" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/SubstringWithConcatenationOfAllWords.java">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/doc/content/SubstringWithConcatenationOfAllWords.md" />
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/SubstringWithConcatenationOfAllWords.java" />
               <option name="questionId" value="30" />
             </LeetcodeEditor>
@@ -176,7 +198,6 @@
         <entry key="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/leetcode/editor/cn/SubstringWithConcatenationOfAllWords.java">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/doc/content/SubstringWithConcatenationOfAllWords.md" />
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/SubstringWithConcatenationOfAllWords.java" />
               <option name="questionId" value="30" />
             </LeetcodeEditor>
@@ -185,7 +206,6 @@
         <entry key="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/leetcode/editor/cn/TwoSum.java">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/leetcode/editor/cn/doc/content/TwoSum.md" />
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/leetcode/editor/cn/TwoSum.java" />
               <option name="questionId" value="1" />
             </LeetcodeEditor>
@@ -194,7 +214,6 @@
         <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/SubstringWithConcatenationOfAllWords.java">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/doc/content/SubstringWithConcatenationOfAllWords.md" />
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/SubstringWithConcatenationOfAllWords.java" />
               <option name="questionId" value="30" />
             </LeetcodeEditor>
