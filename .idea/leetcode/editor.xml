@@ -171,11 +171,27 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/Candy.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/Candy.java" />
+              <option name="questionId" value="135" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/ContainerWithMostWater.java">
           <value>
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/ContainerWithMostWater.java" />
               <option name="questionId" value="11" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/MedianOfTwoSortedArrays.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/MedianOfTwoSortedArrays.java" />
+              <option name="questionId" value="4" />
             </LeetcodeEditor>
           </value>
         </entry>
