@@ -187,11 +187,43 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/EightQueensLcci.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/EightQueensLcci.java" />
+              <option name="questionId" value="100233" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/GasStation.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/GasStation.java" />
+              <option name="questionId" value="134" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/MedianOfTwoSortedArrays.java">
           <value>
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/MedianOfTwoSortedArrays.java" />
               <option name="questionId" value="4" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/MergeKSortedLists.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/MergeKSortedLists.java" />
+              <option name="questionId" value="23" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/NQueens.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/NQueens.java" />
+              <option name="questionId" value="51" />
             </LeetcodeEditor>
           </value>
         </entry>
