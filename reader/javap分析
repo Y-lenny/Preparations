@@ -1,4 +1,6 @@
 参考链接：https://www.jianshu.com/p/6a8997560b05
+基本介绍：javap 查看类信息
+基本步骤：javap -v 类字节码
 
 lvyongwen@lvyongwendeMacBook-Pro Preparations % javap -help
 用法: javap <options> <classes>
@@ -74,9 +76,9 @@ Constant pool:                                            /* 常量池 */
   #41 = NameAndType        #18:#55        // "<init>":(Ljava/lang/Object;)V
   #42 = Class              #56            // java/lang/reflect/Proxy
   #43 = NameAndType        #57:#58        // newProxyInstance:(Ljava/lang/ClassLoader;[Ljava/lang/Class;Ljava/lang/reflect/InvocationHandler;)Ljava/lang/Object;
-  #44 = Utf8               com/lvyongwenhouzi/java/Proxy$Obj
+  #44 = Utf8               com/lvyongwenhouzi/java/TProxy$Obj
   #45 = NameAndType        #59:#19        // print:()V
-  #46 = Utf8               com/lvyongwenhouzi/java/Proxy
+  #46 = Utf8               com/lvyongwenhouzi/java/TProxy
   #47 = Utf8               java/lang/Object
   #48 = Utf8               getClass
   #49 = Utf8               ()Ljava/lang/Class;
@@ -106,16 +108,16 @@ Constant pool:                                            /* 常量池 */
         /*局部变量表，start+length表示这个变量在字节码中的生命周期起始和结束的偏移位置（this生命周期从头0到结尾10），slot就是这个变量在局部变量表中的槽位（槽位可复用），name就是变量名称，Signatur局部变量类型描述*/
       LocalVariableTable:
         Start  Length  Slot  Name   Signature
-            0       5     0  this   Lcom/lvyongwenhouzi/java/Proxy;
+            0       5     0  this   Lcom/lvyongwenhouzi/java/TProxy;
 
   public static void main(java.lang.String[]);
     descriptor: ([Ljava/lang/String;)V
     flags: ACC_PUBLIC, ACC_STATIC
     Code:
       stack=5, locals=3, args_size=1
-         0: new           #2                  // class com/lvyongwenhouzi/java/Proxy$ObjImpl
+         0: new           #2                  // class com/lvyongwenhouzi/java/TProxy$ObjImpl
          3: dup
-         4: invokespecial #3                  // Method com/lvyongwenhouzi/java/Proxy$ObjImpl."<init>":()V
+         4: invokespecial #3                  // Method com/lvyongwenhouzi/java/TProxy$ObjImpl."<init>":()V
          7: astore_1
          8: aload_1
          9: invokevirtual #4                  // Method java/lang/Object.getClass:()Ljava/lang/Class;
@@ -123,15 +125,15 @@ Constant pool:                                            /* 常量池 */
         15: aload_1
         16: invokevirtual #4                  // Method java/lang/Object.getClass:()Ljava/lang/Class;
         19: invokevirtual #6                  // Method java/lang/Class.getInterfaces:()[Ljava/lang/Class;
-        22: new           #7                  // class com/lvyongwenhouzi/java/Proxy$InvokeObj
+        22: new           #7                  // class com/lvyongwenhouzi/java/TProxy$InvokeObj
         25: dup
         26: aload_1
-        27: invokespecial #8                  // Method com/lvyongwenhouzi/java/Proxy$InvokeObj."<init>":(Ljava/lang/Object;)V
+        27: invokespecial #8                  // Method com/lvyongwenhouzi/java/TProxy$InvokeObj."<init>":(Ljava/lang/Object;)V
         30: invokestatic  #9                  // Method java/lang/reflect/Proxy.newProxyInstance:(Ljava/lang/ClassLoader;[Ljava/lang/Class;Ljava/lang/reflect/InvocationHandler;)Ljava/lang/Object;
-        33: checkcast     #10                 // class com/lvyongwenhouzi/java/Proxy$Obj
+        33: checkcast     #10                 // class com/lvyongwenhouzi/java/TProxy$Obj
         36: astore_2
         37: aload_2
-        38: invokeinterface #11,  1           // InterfaceMethod com/lvyongwenhouzi/java/Proxy$Obj.print:()V
+        38: invokeinterface #11,  1           // InterfaceMethod com/lvyongwenhouzi/java/TProxy$Obj.print:()V
         43: return
       LineNumberTable:
         line 22: 0
@@ -144,11 +146,11 @@ Constant pool:                                            /* 常量池 */
       LocalVariableTable:
         Start  Length  Slot  Name   Signature
             0      44     0  args   [Ljava/lang/String;
-            8      36     1   obj   Lcom/lvyongwenhouzi/java/Proxy$Obj;
-           37       7     2 proxyInstance   Lcom/lvyongwenhouzi/java/Proxy$Obj;
+            8      36     1   obj   Lcom/lvyongwenhouzi/java/TProxy$Obj;
+           37       7     2 proxyInstance   Lcom/lvyongwenhouzi/java/TProxy$Obj;
 }
 SourceFile: "Proxy.java"
 InnerClasses:
-     public static #14= #2 of #12; //ObjImpl=class com/lvyongwenhouzi/java/Proxy$ObjImpl of class com/lvyongwenhouzi/java/Proxy
-     public static #16= #10 of #12; //Obj=class com/lvyongwenhouzi/java/Proxy$Obj of class com/lvyongwenhouzi/java/Proxy
-     public static #17= #7 of #12; //InvokeObj=class com/lvyongwenhouzi/java/Proxy$InvokeObj of class com/lvyongwenhouzi/java/Proxy
+     public static #14= #2 of #12; //ObjImpl=class com/lvyongwenhouzi/java/TProxy$ObjImpl of class com/lvyongwenhouzi/java/TProxy
+     public static #16= #10 of #12; //Obj=class com/lvyongwenhouzi/java/TProxy$Obj of class com/lvyongwenhouzi/java/TProxy
+     public static #17= #7 of #12; //InvokeObj=class com/lvyongwenhouzi/java/TProxy$InvokeObj of class com/lvyongwenhouzi/java/TProxy

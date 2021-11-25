@@ -43,7 +43,7 @@ public class TCustomClassLoader extends ClassLoader {
 
         Class clazz = null;
         // 查找并读取文件
-        File classFile = new File("/Users/11114396/IdeaProjects/Preparations/reader/" + name + ".class");
+        File classFile = new File( name + ".class");
         if (classFile.exists()) {
             try (BufferedInputStream bufferedInputStream = new BufferedInputStream(new FileInputStream(classFile))) {
                 byte[] array = new byte[1024];

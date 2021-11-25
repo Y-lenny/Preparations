@@ -31,7 +31,7 @@ public class TProxy {
 
         proxyInstance.print();
 
-        // reader/proxyObjClazz.class
+        // ./proxyObjClazz.class
         // ProxyUtils.generateClassFile(obj.getClass(),"proxyObjClazz");
     }
 
