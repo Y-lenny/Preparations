@@ -42,9 +42,9 @@ public class QuickSort {
 
     /**
      * 按照指定的位置进行分区（实现方式有点类似插入排序）
-     * @param arr
-     * @param p
-     * @param r
+     * @param arr 数组
+     * @param p   开始
+     * @param r   结束
      * @return
      */
     private static int partition(int[] arr, int p, int r) {
