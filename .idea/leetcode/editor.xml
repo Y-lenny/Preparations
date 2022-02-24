@@ -281,6 +281,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/RemoveDuplicatesFromSortedArray.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/doc/content/RemoveDuplicatesFromSortedArray.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com26" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/RemoveDuplicatesFromSortedArray.java" />
+              <option name="titleSlug" value="remove-duplicates-from-sorted-array" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/ReverseInteger.java">
           <value>
             <LeetcodeEditor>
@@ -289,6 +300,17 @@
               <option name="host" value="leetcode-cn.com" />
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/ReverseInteger.java" />
               <option name="titleSlug" value="reverse-integer" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/SearchInRotatedSortedArray.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/doc/content/SearchInRotatedSortedArray.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com33" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/lvyongwenhouzi/server/leetcode/editor/cn/SearchInRotatedSortedArray.java" />
+              <option name="titleSlug" value="search-in-rotated-sorted-array" />
             </LeetcodeEditor>
           </value>
         </entry>
